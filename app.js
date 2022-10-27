@@ -1,4 +1,4 @@
-const Web3 = require('web3')
+const Web3 = require('web3') // Чтобы установить библиотеку в консоль: npm i web3
 const fs = require('fs')
 const readline = require("readline")
 
