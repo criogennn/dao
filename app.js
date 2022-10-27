@@ -35,7 +35,7 @@ async function sleep(seconds){
 
 async function getPrice(token){
   const data = await (await fetch(`https://api.1inch.io/v4.0/${id}/quote?fromTokenAddress=${token.address}&toTokenAddress=${aeth}&amount=${token.amount * (10 ** token.decimals)}`)).json()
-  const ethPrice = Math.round(data.toTokenAmount * 1.05)
+  const ethPrice = Math.round(data.toTokenAmount * 1.10)
   if(ethPrice){
     return ethPrice
   }
